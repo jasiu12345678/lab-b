@@ -10,26 +10,24 @@
 </head>
 <body>
 
-<section class="main">
+<main class="main">
 
     <h1>to do list</h1>
 
-    <form action="todo.php" method="get">
+    <label for="fsearch">Search:</label>
+    <input type="search" id="fsearch" name="fsearch" placeholder="at least 2 characters">
+    <ul class="list" aria-label="taski"></ul>
 
-        <label for="fsearch">Search:</label>
-        <input type="text" id="fsearch" name="fsearch"><br><br>
-        <ul class="list">
-            <li>do this</li><button>-</button>
-            <li>MUST DO THIS</li><button>-</button>
-            <li>thing</li><button>-</button>
-        </ul>
+    <form id="add-task-form" novalidate>
+        <label for="ftask">new task:</label>
         <input type="text" id="ftask" name="ftask">
-        <button>+</button>
-
+        <label for="fdate">due:</label>
+        <input type="datetime-local" id="fdate" name="fdate">
+        <button type="submit">add</button>
+        <span id="add-error" class="error" role="alert"></span>
     </form>
 
-</section>
-
+</main>
 
 </body>
 </html>

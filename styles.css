@@ -1,3 +1,51 @@
 body {
-  background-color: #f3fff3;
+  background-color: #cbd0f8;
+}
+
+.main {
+  max-width: 36rem;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.list {
+  padding-left: 1.5rem;
+}
+
+.list li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.75rem 0;
+  cursor: pointer;
+}
+
+.list li .task-text {
+  flex: 1;
+}
+
+.list li time {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.list li .edit-text {
+  flex: 1;
+}
+
+#add-task-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.error {
+  color: #b00020;
+  font-size: 0.9rem;
+}
+
+mark {
+  background-color: #ff00a2;
 }
